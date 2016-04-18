@@ -1,10 +1,10 @@
 <?php
 
-fwrite(STDOUT, "Choose a starting number and ending number!\n");
-
-$min = $argv[1];
-$max = $argv[2];
-
-for ($a = $min; $a <= $max; $a++) {
-    echo "\$a has a value of {$a}\n";
+fwrite(STDOUT, "Choose a starting number!\n");
+$min = intval(fgets(STDIN));
+fwrite(STDOUT, "Choose a ending number!\n");
+$max = intval(fgets(STDIN));
+$incr = intval(fgets(STDIN));
+for ($a = $min; $a <= $max; $a+=$incr) {
+    echo "$a\n";
 }
