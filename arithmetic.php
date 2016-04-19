@@ -1,30 +1,42 @@
 <?php
-$a = 15;
-$b = 2;
-function add($a, $b)
-{
-    return $a + $b;
+
+function add($a, $b) {
+    if (is_numeric($a) && is_numeric($b)) {
+        return $a + $b;
+    } else {
+        return "ERROR please enter a number";
+    }
+}
+function subtract($a, $b){
+    if (is_numeric($a) && is_numeric($b)) {
+        return $a - $b;
+    } else {
+        return "ERROR please enter a number";
+    }
 }
 
-function subtract($a, $b)
-{
-    return $a - $b;
+function multiply($a, $b){
+    if (is_numeric($a) && is_numeric($b)) {
+        return $a * $b;
+    } else {
+        return "ERROR please enter a number";
+    }
 }
 
-function multiply($a, $b)
-{
-    return $a * $b;
+function divide($a, $b){
+    if (is_numeric($a) && is_numeric($b)) {
+        return $a / $b;
+    } else {
+        return "ERROR please enter a number";
+    }
 }
 
-function divide($a, $b)
-{
-   return $a / $b;
-}
-
-function modulus($a, $b)
-{
-    return $a % $b;
-
+function modulus($a, $b){
+    if (is_numeric($a) && is_numeric($b)) {
+        return $a % $b;
+    } else {
+        return "ERROR please enter a number";
+    }
 }
 
 // Add code to test your functions here
