@@ -24,10 +24,18 @@ $books = array(
     )
 );
 
-foreach ($books as $book => $title) {
-        echo "$book\n";
-    foreach ($title as $index => $info) {
-        echo "$index: $info\n";
+echo "Titles published after 1950\n";
+
+foreach ($books as $title => $book) {  
+    if ($book['published'] > 1950) {
+        echo "$title\n";
+        foreach ($book as $index => $info) {
+            echo "$index: $info\n";
+        }
+    echo "+++++++++++++++++++\n";       
     }
-    echo "+++++++++++++++++++\n";
 }
+
+
+
+
