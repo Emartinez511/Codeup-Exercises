@@ -2,7 +2,7 @@
 
 // TODO: Create your inspect() function here
 function inspect($type){
-    if (is_null($type)){
+    if (is_null($type)) {
         echo 'This is NULL';
     } elseif (is_array($type)) {
         if (empty($type)) {

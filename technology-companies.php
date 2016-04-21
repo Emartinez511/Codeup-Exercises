@@ -45,16 +45,9 @@ $companies = [
     ]
 ];
 
-
-// print_r($companies);
-// ksort($companies);
-// print_r($companies);
-
 foreach ($companies as $company => $employees) {
-
     sort($employees);
     $companies[$company] = $employees;
-    
 }
 arsort($companies);
 print_r($companies);

@@ -32,7 +32,7 @@ foreach ($books as $title => $book) {
         foreach ($book as $index => $info) {
             echo "$index: $info\n";
         }
-    echo "+++++++++++++++++++\n";       
+        echo "+++++++++++++++++++\n";       
     }
 }
 
