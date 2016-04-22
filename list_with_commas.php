@@ -1,14 +1,10 @@
 <?php
 
-
 $physicistsString = 'Gordon Freeman, Samantha Carter, Sheldon Cooper, Quinn Mallory, Bruce Banner, Tony Stark';
-
-
 
 function humanizedList($peopleList, $sort = false) {
     if ($sort == true){
         sort($peopleList);
-    } else {
     }
     $lastphysicist = array_pop($peopleList);
     $newString = implode(", ", $peopleList);
@@ -17,7 +13,4 @@ function humanizedList($peopleList, $sort = false) {
 
 $physicistsArray = explode(", ", $physicistsString);
 
- // Humanize that list
- // $famousFakePhysicists = humanizedList($physicistsArray);
-
-echo humanizedList($physicistsArray);
+echo humanizedList($physicistsArray, true);
